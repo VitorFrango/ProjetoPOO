@@ -26,7 +26,7 @@ class Tarefa(Trabalhos):
         self.responsavel = responsavel
 
 class Projeto(Trabalhos):
-    basedados = Basedados()  # Add this line if 'basedados' is supposed to be an attribute
+    basedados = Basedados()  # instanciar a classe basedados
 
     def set_basedados(cls, basedados, self=None):  # construtor da classe projeto
         self.basedados = basedados()

@@ -111,8 +111,6 @@ class Dashboard:
         else:
             print("Não há dados suficientes para gerar o dashboard.")
 
-
-
 """""
 PERGUNTA 2 ALINEA C
     def mostrar_estatisticas(self):

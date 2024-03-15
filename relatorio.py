@@ -111,6 +111,28 @@ class Dashboard:
         else:
             print("Não há dados suficientes para gerar o dashboard.")
 
+"""""
+PERGUNTA 2 ALINEA C
+    def mostrar_estatisticas(self):
+        # check se os dados foram carregados
+        if hasattr(self, 'dados_projetos') and not self.dados_projetos.empty:
+            print("Estatísticas dos Projetos:")
+            print(self.dados_projetos.describe())  # Descreve estatísticas básicas
+
+            # Mostra gráficos 
+            if 'coluna_exemplo' in self.dados_projetos.columns:
+                plt.figure(figsize=(10, 6))
+                sns.histplot(self.dados_projetos['satus'], kde=True)
+                plt.title('Distribuição da Coluna status')
+                plt.xlabel('Status')
+                plt.ylabel('Frequência')
+                plt.show()
+            else:
+                print("A coluna 'status' não foi encontrada nos dados dos projetos.")
+        else:
+            print("Dados dos projetos não estão disponíveis ou não foram carregados.")
+            
+"""
 
 
 """""
